@@ -24,7 +24,7 @@ jobs:
     - name: Generate QR Code
       uses: snow-actions/qrcode@v1.1.0
       with:
-        text: 'https://github.com/pk1wastaken/ayya'
+        text: 'https://github.com/pk1wastaken/Devops'
         path: 'qrcode.png'
     - name: Commit QR Code
       run: |
