@@ -28,13 +28,13 @@ jobs:
         path: 'qrcode.png'
     - name: Commit QR Code
       run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email "pranav01.kandula@gmail.com"
+        git config --global user.name "pk1wastaken"
         git add qrcode.png
         git commit -m "Generated QR Code"
         git push origin main
     - name: Upload QR Code as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: qrcode
         path: qrcode.png
