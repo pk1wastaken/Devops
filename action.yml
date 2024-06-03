@@ -1,0 +1,18 @@
+name: 'QR Code Generator'
+description: 'QR Code Generator.'
+inputs:
+  text:
+    description: 'Text to encode.'
+    required: true
+  path:
+    description: |
+      Path where to save the file.
+      Recognized extensions are png, svg, txt.
+    required: true
+    default: 'qrcode.png'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+branding:
+  icon: 'grid'
+  color: 'gray-dark'
